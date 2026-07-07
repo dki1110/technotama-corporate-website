@@ -5,17 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Technotama LLC. Business app improvement and system enhancement from design to operation. Device integration (BLE, etc.), CTI/CRM integration, and AI utilization.">
     <title>Technotama LLC | Engineering Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="canonical" href="https://technotama.com/index_en.html">
     <link rel="alternate" hreflang="ja" href="https://technotama.com/">
     <link rel="alternate" hreflang="en" href="https://technotama.com/index_en.html">
     <link rel="alternate" hreflang="x-default" href="https://technotama.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Technotama LLC">
+    <meta property="og:title" content="Technotama LLC | Engineering Services">
+    <meta property="og:description" content="Technotama LLC. Business app improvement and system enhancement from design to operation. Device integration (BLE, etc.), CTI/CRM integration, and AI utilization.">
+    <meta property="og:url" content="https://technotama.com/index_en.html">
+    <meta property="og:image" content="https://technotama.com/images/ogp.png">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#2563eb">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Technotama LLC",
+        "url": "https://technotama.com/",
+        "logo": "https://technotama.com/images/ogp.png",
+        "description": "Technotama LLC. Business app improvement and system enhancement from design to operation. Device integration (BLE, etc.), CTI/CRM integration, and AI utilization.",
+        "sameAs": [
+            "https://www.lancers.jp/profile/kyo101110",
+            "https://crowdworks.jp/public/employees/2424329/"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "JP",
+            "addressRegion": "Tokyo",
+            "addressLocality": "Shibuya-ku",
+            "streetAddress": "5F, EX Ebisu-Nishi Building, 2-8-4 Ebisu-Nishi"
+        }
+    }
+    </script>
 </head>
 <body>
     <header>
         <nav class="container">
             <div class="logo"><a href="/">Technotama</a></div>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#pains">Challenges</a></li>
                 <li><a href="#services">Services</a></li>
@@ -24,6 +59,7 @@
                 <li><a href="contact_en.html">Contact</a></li>
             </ul>
             <a href="/" class="lang-switcher">JA</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu"><span></span><span></span><span></span></button>
         </nav>
     </header>
 
@@ -41,8 +77,6 @@
                     <a href="https://www.lancers.jp/profile/kyo101110" target="_blank" rel="noopener">Lancers (Reviews)</a>
                     /
                     <a href="https://crowdworks.jp/public/employees/2424329/" target="_blank" rel="noopener">CrowdWorks (Reviews)</a>
-                </p>
-                <p class="hero-note">
                 </p>
             </div>
         </section>
@@ -62,10 +96,10 @@
 
                 <div class="about-bullets">
                     <ul>
-                        <li>Requirements gathering and current state assessment (business flow/operations/constraints inventory)</li>
-                        <li>Validation (PoC) → phased deployment → adoption support (troubleshooting/training/operations design)</li>
+                        <li>Requirements gathering and current state assessment (business flow/<wbr>operations/<wbr>constraints inventory)</li>
+                        <li>Validation (PoC) → phased deployment → adoption support (troubleshooting/<wbr>training/<wbr>operations design)</li>
                         <li>Phone operations (VoIP/CTI/CRM integration) and device integration (BLE, etc.) requirements</li>
-                        <li>AI utilization (summarization/classification/search/input assistance) integrated in a way that fits your business</li>
+                        <li>AI utilization (summarization/<wbr>classification/<wbr>search/<wbr>input assistance) integrated in a way that fits your business</li>
                     </ul>
                 </div>
             </div>
@@ -104,7 +138,7 @@
                             <li>Comprehensive support from requirements gathering to UI design to implementation to operation</li>
                             <li>Reducing double entry, automating aggregation, and minimizing errors</li>
                             <li>Operational design including data migration, permissions, and audit logs</li>
-                            <li>AI utilization (input assistance/summarization/classification/search) integrated in a way that fits your business</li>
+                            <li>AI utilization (input assistance/<wbr>summarization/<wbr>classification/<wbr>search) integrated in a way that fits your business</li>
                         </ul>
                     </div>
 
@@ -115,7 +149,7 @@
                             We automatically capture "field data" from inspections, measurements, reception, and entry/exit, and link it to business operations like aggregation, reporting, and billing.
                         </p>
                         <ul class="service-list">
-                            <li>Device integration using BLE (connection/authentication/data transmission/state management)</li>
+                            <li>Device integration using BLE (connection/<wbr>authentication/<wbr>data transmission/<wbr>state management)</li>
                             <li>Mobile/tablet app and admin panel integration</li>
                             <li>Log design, error retry, and operations design (systems that don't stop in the field)</li>
                             <li>Support from field validation (PoC) to phased deployment</li>
@@ -139,7 +173,7 @@
 
                 <p class="services-note">
                     ※Rather than completely rebuilding existing setups, we fundamentally propose "leveraging what you have and improving it."<br>
-                    We design implementation steps that are feasible, taking into account requirements and constraints (lines/devices/security/operational structure, etc.).
+                    We design implementation steps that are feasible, taking into account requirements and constraints (lines/<wbr>devices/<wbr>security/<wbr>operational structure, etc.).
                 </p>
             </div>
         </section>
@@ -202,7 +236,7 @@
                         </div>
                     </div>
                     <div class="company-mascot">
-                        <img src="images/cat_tama.png" alt="Technotama Mascot">
+                        <img src="images/cat_tama.png" alt="Technotama Mascot" width="440" height="660" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
@@ -228,5 +262,6 @@
             <p>&copy; 2026 Technotama LLC. All rights reserved.</p>
         </div>
     </footer>
+    <script src="script.js" defer></script>
 </body>
 </html>
