@@ -13,21 +13,28 @@ A static corporate website showcasing engineering services including:
 ## Structure
 
 ```
-├── index.html          # Japanese homepage
-├── index_en.html       # English homepage
-├── contact.html        # Japanese contact page
-├── contact_en.html     # English contact page
-├── privacy.html        # Japanese privacy policy
-├── privacy_en.html     # English privacy policy
-├── styles.css          # Shared stylesheet
+├── index.html            # Japanese homepage
+├── index_en.html         # English homepage
+├── contact.html          # Japanese contact page
+├── contact_en.html       # English contact page
+├── privacy.html          # Japanese privacy policy
+├── privacy_en.html       # English privacy policy
+├── 404.html              # Custom 404 page (used automatically by GitHub Pages)
+├── styles.css            # Shared stylesheet (design tokens in :root)
+├── script.js             # Mobile nav toggle + scroll reveal animation
+├── favicon.svg           # Favicon (SVG)
+├── apple-touch-icon.png  # iOS home screen icon (180x180)
 └── images/
-    └── cat_tama.png    # Mascot image
+    ├── cat_tama.png      # Mascot image
+    └── ogp.png           # OGP image for social sharing (1200x630)
 ```
 
 ## Features
 
-- Bilingual support (Japanese / English)
-- Responsive design
+- Bilingual support (Japanese / English) with hreflang/canonical SEO setup
+- Responsive design with hamburger menu on mobile
+- Noto Sans JP web font and scroll reveal animation (respects prefers-reduced-motion)
+- OGP / Twitter Card meta tags, favicon, and Organization JSON-LD
 - Google Forms integration for contact
 - Sticky footer layout
 

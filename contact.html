@@ -5,17 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="合同会社Technotama - お問い合わせ">
     <title>お問い合わせ | 合同会社Technotama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="canonical" href="https://technotama.com/contact.html">
     <link rel="alternate" hreflang="ja" href="https://technotama.com/contact.html">
     <link rel="alternate" hreflang="en" href="https://technotama.com/contact_en.html">
     <link rel="alternate" hreflang="x-default" href="https://technotama.com/contact.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="合同会社Technotama">
+    <meta property="og:title" content="お問い合わせ | 合同会社Technotama">
+    <meta property="og:description" content="合同会社Technotama - お問い合わせ">
+    <meta property="og:url" content="https://technotama.com/contact.html">
+    <meta property="og:image" content="https://technotama.com/images/ogp.png">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#2563eb">
 </head>
 <body>
     <header>
         <nav class="container">
             <div class="logo"><a href="/">Technotama</a></div>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-menu">
                 <li><a href="/#about">私たちについて</a></li>
                 <li><a href="/#pains">よくあるご相談</a></li>
                 <li><a href="/#services">サービス</a></li>
@@ -24,6 +38,7 @@
                 <li><a href="contact.html">お問い合わせ</a></li>
             </ul>
             <a href="contact_en.html" class="lang-switcher">EN</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="メニューを開閉する"><span></span><span></span><span></span></button>
         </nav>
     </header>
 
@@ -34,7 +49,7 @@
                 <p class="page-description">プロジェクトのご相談はお気軽にお問い合わせください。</p>
 
                 <div class="form-container">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScyeDJY9slotdPx3OoeTCw8wGR4bciGGFnXwx1s4bRwi4aPug/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScyeDJY9slotdPx3OoeTCw8wGR4bciGGFnXwx1s4bRwi4aPug/viewform?embedded=true" title="お問い合わせフォーム" width="100%" height="800" loading="lazy">読み込んでいます…</iframe>
                 </div>
 
                 <div class="contact-note">
@@ -52,5 +67,6 @@
             <p>&copy; 2026 合同会社Technotama. All rights reserved.</p>
         </div>
     </footer>
+    <script src="script.js" defer></script>
 </body>
 </html>
