@@ -31,6 +31,17 @@
         "name": "合同会社Technotama",
         "url": "https://technotama.com/",
         "logo": "https://technotama.com/images/ogp.png",
+        "foundingDate": "2024-11-11",
+        "founder": {
+            "@type": "Person",
+            "name": "池田朋弘"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "url": "https://technotama.com/contact.html",
+            "availableLanguage": ["ja", "en"]
+        },
         "description": "合同会社Technotama。業務アプリ改善・既存システム改善を設計〜運用まで支援。現場デバイス連携（BLE等）、CTI/CRM連携、AI活用にも対応。",
         "sameAs": [
             "https://www.lancers.jp/profile/kyo101110",
@@ -47,6 +58,7 @@
     </script>
 </head>
 <body>
+    <a class="skip-link" href="#main">本文へ移動</a>
     <header>
         <nav class="container">
             <div class="logo"><a href="/">Technotama</a></div>
@@ -63,7 +75,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main" tabindex="-1">
         <section class="hero">
             <div class="container">
                 <h1>エンジニアリングで<br>業務を前に進める</h1>
@@ -132,7 +144,7 @@
 
                 <div class="service-grid">
                     <div class="service-card">
-                        <h3>🚀 業務アプリ改善（改修・保守・段階導入）</h3>
+                        <h3><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M7 6.5h.01"/></svg></span>業務アプリ改善（改修・保守・段階導入）</h3>
                         <p>
                             受付・問い合わせ管理、予約、簡易CRM、管理画面、外部API連携など、現場で使われる業務アプリを開発します。<br>
                             スプレッドシートや既存システムを前提に、段階移行や部分導入にも対応します。
@@ -141,12 +153,11 @@
                             <li>要件整理〜画面設計〜実装〜運用まで一貫して支援</li>
                             <li>二重入力の削減・集計の自動化・ミスの低減</li>
                             <li>データ移行・権限・監査ログなど運用面も設計</li>
-                            <li>AI活用（入力補助/要約/分類/検索）を業務に馴染む形で組み込み</li>
                         </ul>
                     </div>
 
                     <div class="service-card">
-                        <h3>🔗 現場データ連携（BLE等）</h3>
+                        <h3><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 7 10 10-5 5V2l5 5L7 17"/></svg></span>現場データ連携（BLE等）</h3>
                         <p>
                             現場で使う機器・端末と業務システムをつなぎ、入力の手間やミス、属人化を減らします。<br>
                             点検・計測・受付・入退室などの"現場データ"を自動で取り込み、集計・報告・請求などの業務につなげます。
@@ -160,7 +171,7 @@
                     </div>
 
                     <div class="service-card">
-                        <h3>📞 CTI/CRM連携・電話業務の自動化</h3>
+                        <h3><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>CTI/CRM連携・電話業務の自動化</h3>
                         <p>
                             既存の電話環境（クラウドPBX/CTI/オンプレ等）を活かし、業務システム側の連携・自動化を実装します。<br>
                             着信ポップアップ・顧客紐付け・通話ログ自動記録・折返しタスク化などで、対応品質とスピードを改善します。
@@ -239,7 +250,10 @@
                         </div>
                     </div>
                     <div class="company-mascot">
-                        <img src="images/cat_tama.png" alt="Technotama Mascot" width="440" height="660" loading="lazy" decoding="async">
+                        <picture>
+                            <source srcset="images/cat_tama.webp" type="image/webp">
+                            <img src="images/cat_tama.png" alt="" width="440" height="660" loading="lazy" decoding="async">
+                        </picture>
                     </div>
                 </div>
             </div>
