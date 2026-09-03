@@ -66,6 +66,28 @@ h1, h2, h3 {
     outline-offset: 2px;
 }
 
+/* Skip link: visible only when focused */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 1rem;
+    z-index: 200;
+    padding: 0.625rem 1rem;
+    background-color: var(--c-primary);
+    color: #fff;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
+main:focus {
+    outline: none;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -247,6 +269,27 @@ nav {
     padding: 6rem 0;
 }
 
+.section.is-centered p {
+    text-align: center;
+}
+
+.section.is-centered h1 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.section.is-centered h1::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--c-primary);
+    margin: 1rem auto 0;
+}
+
 .section h2 {
     font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 700;
@@ -267,7 +310,7 @@ nav {
 .section p {
     font-size: 1rem;
     line-height: 1.9;
-    text-align: center;
+    text-align: left;
     max-width: 800px;
     margin: 0 auto 1.5rem;
     color: var(--c-text);
@@ -311,7 +354,7 @@ nav {
     line-height: 2;
     max-width: 900px;
     margin: 0 auto 2rem;
-    text-align: center;
+    text-align: left;
 }
 
 .service-grid {
@@ -336,10 +379,30 @@ nav {
 }
 
 .service-card h3 {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
     font-size: 1.125rem;
     font-weight: 700;
     margin-bottom: 1rem;
     line-height: 1.6;
+}
+
+.service-icon {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-sm);
+    background-color: var(--c-primary-tint);
+    color: var(--c-primary);
+}
+
+.service-icon svg {
+    width: 20px;
+    height: 20px;
 }
 
 .service-card p {

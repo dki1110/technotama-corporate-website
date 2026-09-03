@@ -31,6 +31,17 @@
         "name": "Technotama LLC",
         "url": "https://technotama.com/",
         "logo": "https://technotama.com/images/ogp.png",
+        "foundingDate": "2024-11-11",
+        "founder": {
+            "@type": "Person",
+            "name": "Tomohiro Ikeda"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "url": "https://technotama.com/contact_en.html",
+            "availableLanguage": ["ja", "en"]
+        },
         "description": "Technotama LLC. Business app improvement and system enhancement from design to operation. Device integration (BLE, etc.), CTI/CRM integration, and AI utilization.",
         "sameAs": [
             "https://www.lancers.jp/profile/kyo101110",
@@ -47,6 +58,7 @@
     </script>
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header>
         <nav class="container">
             <div class="logo"><a href="/">Technotama</a></div>
@@ -63,7 +75,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main" tabindex="-1">
         <section class="hero">
             <div class="container">
                 <h1>Move Your Business Forward<br>with Engineering</h1>
@@ -129,7 +141,7 @@
 
                 <div class="service-grid">
                     <div class="service-card">
-                        <h3>🚀 Business App Improvement (Maintenance, Enhancement, Phased Deployment)</h3>
+                        <h3><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M7 6.5h.01"/></svg></span>Business App Improvement (Maintenance, Enhancement, Phased Deployment)</h3>
                         <p>
                             We develop business apps used in the field, such as reception and inquiry management, reservations, simple CRM, admin panels, and external API integration.<br>
                             We support phased migration and partial implementation based on spreadsheets or existing systems.
@@ -138,12 +150,11 @@
                             <li>Comprehensive support from requirements gathering to UI design to implementation to operation</li>
                             <li>Reducing double entry, automating aggregation, and minimizing errors</li>
                             <li>Operational design including data migration, permissions, and audit logs</li>
-                            <li>AI utilization (input assistance/<wbr>summarization/<wbr>classification/<wbr>search) integrated in a way that fits your business</li>
                         </ul>
                     </div>
 
                     <div class="service-card">
-                        <h3>🔗 Field Data Integration (BLE, etc.)</h3>
+                        <h3><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 7 10 10-5 5V2l5 5L7 17"/></svg></span>Field Data Integration (BLE, etc.)</h3>
                         <p>
                             We connect equipment and devices used in the field with business systems to reduce input effort, errors, and knowledge silos.<br>
                             We automatically capture "field data" from inspections, measurements, reception, and entry/exit, and link it to business operations like aggregation, reporting, and billing.
@@ -157,7 +168,7 @@
                     </div>
 
                     <div class="service-card">
-                        <h3>📞 CTI/CRM Integration & Phone Automation</h3>
+                        <h3><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>CTI/CRM Integration &amp; Phone Automation</h3>
                         <p>
                             We leverage your existing phone environment (cloud PBX/CTI/on-premises, etc.) and implement integration and automation on the business system side.<br>
                             We improve response quality and speed with incoming call pop-ups, customer linking, automatic call logging, and callback task creation.
@@ -236,7 +247,10 @@
                         </div>
                     </div>
                     <div class="company-mascot">
-                        <img src="images/cat_tama.png" alt="Technotama Mascot" width="440" height="660" loading="lazy" decoding="async">
+                        <picture>
+                            <source srcset="images/cat_tama.webp" type="image/webp">
+                            <img src="images/cat_tama.png" alt="" width="440" height="660" loading="lazy" decoding="async">
+                        </picture>
                     </div>
                 </div>
             </div>

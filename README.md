@@ -25,7 +25,8 @@ A static corporate website showcasing engineering services including:
 ├── favicon.svg           # Favicon (SVG)
 ├── apple-touch-icon.png  # iOS home screen icon (180x180)
 └── images/
-    ├── cat_tama.png      # Mascot image
+    ├── cat_tama.png      # Mascot image (PNG fallback)
+    ├── cat_tama.webp     # Mascot image (WebP, served via <picture>)
     └── ogp.png           # OGP image for social sharing (1200x630)
 ```
 
@@ -33,6 +34,7 @@ A static corporate website showcasing engineering services including:
 
 - Bilingual support (Japanese / English) with hreflang/canonical SEO setup
 - Responsive design with hamburger menu on mobile
+- Accessibility basics: skip link, SVG service icons (no emoji), decorative images with empty alt
 - Noto Sans JP web font and scroll reveal animation (respects prefers-reduced-motion)
 - OGP / Twitter Card meta tags, favicon, and Organization JSON-LD
 - Google Forms integration for contact
@@ -54,23 +56,11 @@ Then open `http://localhost:8000` in your browser.
 
 ## Deployment
 
-### GitHub Pages
+The site is hosted on GitHub Pages and served at https://technotama.com/.
 
-1. Push to GitHub repository
-2. Go to Settings > Pages
-3. Select Source: `main` branch, `/ (root)` folder
-4. Save
-
-The site will be available at `https://USERNAME.github.io/technotama-corporate-website/`
-
-### Custom Domain (Optional)
-
-1. Add CNAME record at your DNS provider:
-   ```
-   www.yourdomain.com -> USERNAME.github.io
-   ```
-2. Enter custom domain in GitHub Pages settings
-3. Enable "Enforce HTTPS"
+- Pushing to `main` deploys automatically (Settings > Pages: Source = `main` branch, `/ (root)` folder).
+- The custom domain is set by the `CNAME` file in the repository root; DNS for `technotama.com` points to GitHub Pages and "Enforce HTTPS" is enabled in the Pages settings.
+- `sitemap.xml` is static: update the `<lastmod>` values when pages change.
 
 ## License
 
